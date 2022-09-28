@@ -1,3 +1,0 @@
-osource "c:/Users/SongDian/Desktop/smp_svr2/smp_svr/boards/shields/*/Kconfig.defconfig"
-osource "c:/Users/SongDian/Desktop/alpha4firmware/hello_world3/boards/shields/*/Kconfig.defconfig"
-osource "C:/Users/SongDian/ncs2/v2.0.2/nrf/boards/shields/*/Kconfig.defconfig"
