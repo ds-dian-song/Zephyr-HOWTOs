@@ -1,5 +1,6 @@
 #Zephyr
 build/
+boards/
 #CMAKE
 CMakeLists.txt.user
 CMakeCache.txt
