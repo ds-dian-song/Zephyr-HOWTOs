@@ -1,0 +1,8 @@
+add_custom_target(mcuboot_shared_property_target)
+set_property(TARGET mcuboot_shared_property_target  PROPERTY KERNEL_HEX_NAME;zephyr.hex)
+set_property(TARGET mcuboot_shared_property_target  PROPERTY ZEPHYR_BINARY_DIR;C:/Users/SongDian/Desktop/smp_svr2/smp_svr/build/mcuboot/zephyr)
+set_property(TARGET mcuboot_shared_property_target  PROPERTY KERNEL_ELF_NAME;zephyr.elf)
+set_property(TARGET mcuboot_shared_property_target  PROPERTY BUILD_BYPRODUCTS;C:/Users/SongDian/Desktop/smp_svr2/smp_svr/build/mcuboot/zephyr/zephyr.hex;C:/Users/SongDian/Desktop/smp_svr2/smp_svr/build/mcuboot/zephyr/zephyr.elf)
+set_property(TARGET mcuboot_shared_property_target  PROPERTY SIGNATURE_KEY_FILE;root-rsa-2048.pem)
+set_property(TARGET mcuboot_shared_property_target APPEND PROPERTY PM_YML_DEP_FILES;C:/Users/SongDian/ncs2/v2.0.2/bootloader/mcuboot/boot/zephyr/pm.yml)
+set_property(TARGET mcuboot_shared_property_target APPEND PROPERTY PM_YML_FILES;C:/Users/SongDian/Desktop/smp_svr2/smp_svr/build/mcuboot/zephyr/include/generated/pm.yml)
