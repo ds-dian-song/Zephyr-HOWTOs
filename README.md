@@ -3,7 +3,7 @@ Some HOWTOs in Zephyr RTOS that I would like to share
 ## smp_svr
 A minimally configured smp_svr sample that enables MCUBoot with secondary slot in external SPI NOR flash.
 
-Tested on Windows 11 machine using VSCode, nRF Connect SDK v2.0.x and v2.1.0. Hardware is a custom Laird BL653u module, which, from Zephyr's point of view, is equivalent to nRF52833-QIAA. 
+Tested on Windows 11 machine using VSCode, nRF Connect SDK v2.0.x and v2.1.0. Hardware is a custom Laird BL653u module, which, from Zephyr's point of view, is equivalent to nRF52833-QIAA. Thus, this project should work out-of-shelf with in-tree boards such as BL653_DVK, nRF52833dk_nRF52833, and nRF52840dk_nRF52840.
 
 The SPI NOR chip is a Winbond W25Q128 connected to default &spi1 bus.
 
