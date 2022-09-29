@@ -17,6 +17,6 @@ so devicetree description is still very relevant to the project even though warn
 - `build/zephyr/.config` and `build/zephyr/zephyr.dts` are the final Kconfig and devicetree that goes into the compiler for the parent image. Review this if debugging is needed.
 - `build/mcuboot/zephyr/.config` and `build/mcuboot/zephyr/zephyr.dts` are the final Kconfig and devicetree that goes into the compiler for the child image. Review this if debugging is needed.
 - Using `.overlay` file in a parent-child build is not really a good practice, considering the alternative, i.e. providing a custom `/boards/<Arch>/<Boardname>` folder, can be compiled without additional `CMakeLists.txt` directives.
-- It is very likely that your SPI NOR chip comforms to the same `jesd216` standard, so the devicetree specifications will likely be similar. If unsure about some of the inputs, i.e. `sfdp-bfp` or `jedec-id`, compile a 
+- It is very likely that your SPI NOR chip comforms to the same `jesd216` standard, so the devicetree entries will likely be similar. If unsure about some of the inputs, i.e. `sfdp-bfp` or `jedec-id`, compile and run a 
 [JESD216 Sample](https://docs.zephyrproject.org/2.6.0/samples/drivers/jesd216/README.html)
 to retrieve needed information.
