@@ -16,4 +16,3 @@ Find and replace
 - [Documentation: Troubleshooting Devicetree](https://docs.zephyrproject.org/3.1.0/build/dts/troubleshooting.html)
 - [Documentation: Application Development](https://docs.zephyrproject.org/3.1.0/develop/application/index.html)
 - [Github Issue: undefined reference to `__device_dts_ord_xx'](https://github.com/zephyrproject-rtos/zephyr/issues/41677)
-- [Documentation: Device Driver Model](https://docs.zephyrproject.org/3.1.0/kernel/drivers/index.html)
