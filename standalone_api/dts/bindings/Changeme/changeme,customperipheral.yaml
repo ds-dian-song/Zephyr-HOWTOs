@@ -1,0 +1,19 @@
+description: |
+  Lorem Ipsi Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Nam dignissim et nibh ac ullamcorper. Quisque in elementum turpis. Sed vitae orci elit.
+
+compatible: "changeme,customperipheral"
+
+include: "uart-device.yaml"
+
+properties:
+  enable-gpios:
+    required: true
+    type: phandle-array
+    description: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim et nibh ac ullamcorper. Quisque in elementum turpis. Sed vitae orci elit.
+  reset-gpios:
+    required: true
+    type: phandle-array
+    description: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim et nibh ac ullamcorper. Quisque in elementum turpis. Sed vitae orci elit.

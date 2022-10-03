@@ -1,0 +1,4 @@
+name: lol
+build:
+  cmake: drivers
+  kconfig: drivers/Kconfig

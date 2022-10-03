@@ -1,0 +1,17 @@
+
+
+menuconfig CUSTOMPERIPHERAL
+
+    bool "Enable Customperipheral"
+    depends on GPIO
+    help
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim et nibh ac ullamcorper. Quisque in elementum turpis. Sed vitae orci elit.
+
+
+if CUSTOMPERIPHERAL
+
+    module = CUSTOMPERIPHERAL
+    module-str = customperipheral
+    source "subsys/logging/Kconfig.template.log_config"
+
+endif #CUSTOMPERIPHERAL
