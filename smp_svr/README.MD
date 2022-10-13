@@ -6,6 +6,7 @@ Tested on Windows 11 machine using VSCode, nRF Connect SDK v2.0.x and v2.1.0. Ha
 The SPI NOR chip is a Winbond W25Q128 connected to default &spi1 bus.
 
 Pay special attention to:
+- `CONFIG_PM_OVERRIDE_EXTERNAL_DRIVER_CHECK=y`when this Kconfig option is not added, the `partition_manager.cmake` will assign `QSPI_NOR` driver to the flash by default, which will result in "Failed to Load", "Maximum Sector: <num> too small?", or "sector unreachable" type of error.
 - `/child_image` and `CMakeLists.txt` which specifies CMake variable `mcuboot_DTC_OVERLAY_FILE`. The extra CMake set statement must preceed find_package(), or it will produce a bug that could only be debugged by looking into the final `.dts` file for the MCUBoot child image.
 - `/child_image/mcuboot.conf` which configures MCUBoot partition size, boot strategy, and awareness of SPI NOR external flash space.
 - `build/partitions.yml` which can be renamed as `pm_static.yml`, relocated to project root folder, and serve as the partition description for child images (i.e. MCUBoot). 
