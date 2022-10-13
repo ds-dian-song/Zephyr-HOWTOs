@@ -1,0 +1,4 @@
+
+menu "Custom Peripheral"
+rsource "customperipheral/Kconfig"
+endmenu

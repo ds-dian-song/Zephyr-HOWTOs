@@ -1,0 +1,6 @@
+{
+    "C_Cpp.default.configurationProvider": "nrf-connect",
+    "nrf-connect.applications": [
+        "${workspaceFolder}"
+    ]
+}

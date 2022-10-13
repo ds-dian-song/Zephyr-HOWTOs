@@ -1,0 +1,35 @@
+// To get started, press Ctrl+Space to bring up the completion menu and view the available nodes.
+
+// You can also use the buttons in the sidebar to perform actions on nodes.
+// Actions currently available include:
+
+// * Enabling / disabling the node
+// * Adding the bus to a bus
+// * Removing the node
+// * Connecting ADC channels
+
+// For more help, browse the DeviceTree documentation at https://docs.zephyrproject.org/latest/guides/dts/index.html
+// You can also visit the nRF DeviceTree extension documentation at https://nrfconnect.github.io/vscode-nrf-connect/devicetree/nrfdevicetree.html
+/ {
+    chosen {
+        zephyr,uart-pipe = &uart0;
+    };
+    /delete-node/ leds;
+    /delete-node/ buttons;
+    /delete-node/ aliases;
+};
+&uart0 {
+    compatible = "nordic,nrf-uarte";
+	current-speed = <115200>;
+	status = "okay";
+	pinctrl-0 = <&uart0_default>;
+	pinctrl-1 = <&uart0_sleep>;
+	pinctrl-names = "default", "sleep";
+
+    customperipheral:customperipheral {
+        compatible   = "changeme,customperipheral";
+        status = "okay"; 
+        enable-gpios = < &gpio0 17 GPIO_ACTIVE_LOW >;
+        reset-gpios  = < &gpio0 11 GPIO_ACTIVE_LOW >;
+    };
+};
